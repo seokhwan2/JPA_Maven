@@ -31,6 +31,7 @@ public class JpaMain {
             //SQL과 문법 유사, SELECT, FROM, WHERE, GROUP, BY, HAVING, JOIN 지원
             //JPQL은 엔티티 객체를 대상으로 쿼리
             //SQL은 데이터베이스 테이블을 대상으로 쿼리
+            //
             List<Member> result = em.createQuery("select m from Member as m", Member.class)
                     .setFirstResult(5)
                     .setMaxResults(8)
